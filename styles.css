@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	background: lightgray;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+}
+
+.header__logo{
+	font-weight: 500;
+	font-size: 24px;
+	margin-left: 1%;
+	align-self: center;
+}
+nav{
+	align-self: center;
+	display:flex;
+	flex-direction: row;
+}
+
+.icon{
+	width:100px;
+}
+
+.icondiv{
+	float: right;
+}
+
+nav button{
+	color:red;
+	font-weight:800;
+	font-size: medium;
+	padding: 10px 30px 10px 30px;
+	margin: 5px;
+	background: rgba(211, 211, 211, 0);
+	border:solid #686868 1px;
+	border-radius:7px;
+	cursor: pointer;
+}
+
+.main__welcome img{
+	width: 100%;
+	height: 1000px;
+}
+.title-text{
+	position: absolute;
+	top: 350px;
+	left: 60px;
+	width: 380px;
+	height: 100px;
+	border-top-left-radius:25px;
+	border-bottom-right-radius: 25px;
+	background: rgba(230, 230, 230, 0.8);
+	border: 2px solid red;
+	padding: 30px;
+}
+.main__welcome h1{
+	font-size: 35px;
+	font-weight: lighter;
+}
+.main__welcome p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.main__middle img{
+	margin-top:-158px;
+	width: 100%;
+	height: 220px;
+	opacity:0.95;
+}
+.middlenav{
+	display:flex;
+	position:absolute;
+}
+.circle{
+	position: absolute;
+	top: 1994px;
+	left: 60px;
+	width: 350px;
+	height: 350px;
+	border-radius:50%;
+	background-color: #CFE2F3;
+}
+.circle p{
+	margin-top:170px;
+	margin-left:69px;
+	font-weight:800;
+}
+footer{
+	background: black;
+	color:#fff;
+	padding: 10px;
+}
+.bottom_right{
+	text-align: right;
+}
+
+.main__middle{
+	background-image: url(./src/german-flag.jpg);
+	min-height: 410px;
+	
+	
+}
+
+.blocks {
+	display:flex;
+	justify-content: space-between;
+	margin: 0 60px;
+	margin-top: 60px;
+}
+.block {
+	background:rgb(204, 204, 204);
+	border:solid #686868 1px;
+	border-radius:7px;
+	max-width: 409px;
+	padding: 10px;
+	padding-top: 60px
+}
+.block button{
+	color:red;
+	font-weight:800;
+	font-size:large;
+	cursor: pointer;
+	background: rgba(211, 211, 211, 0);
+	border:solid #686868 1px;
+	border-radius:7px;
+	display:flex;
+	padding: 25px 40px;
+	margin: 10px auto;
+}
+
+.fix {
+	margin-bottom: -4px;
+}
+
+@media screen and (max-width: 900px) {
+	.cards {
+		flex-direction: column;
+	}
+	.card{
+		max-width: none;
+		margin-top: 20px;
+	}
+	.circle {
+		top: 2328px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	header{
+		flex-direction: column;
+	}
+	.icondiv {
+		display:none;
+	}
+	nav{
+		margin-top: 8px;
+		margin-bottom:13px;
+		flex-direction: column;
+	}
+	nav button{
+		margin-top:5px;
+	}
+	.title-text {
+		left: 10px;
+	}
+
+}
